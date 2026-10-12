@@ -1,0 +1,20 @@
+[Unit]
+Description=Dekco camera bridge
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/opt/dekco-rtsp-bridge
+ExecStart=/opt/dekco-rtsp-bridge/.venv/bin/python /opt/dekco-rtsp-bridge/dekco-bridge.py --clarity 2
+Restart=on-failure
+RestartSec=20
+TimeoutStopSec=30
+KillSignal=SIGINT
+KillMode=mixed
+UMask=0077
+Nice=5
+
+[Install]
+WantedBy=multi-user.target

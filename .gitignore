@@ -1,0 +1,28 @@
+# Account material and local settings
+credentials.json
+credentials.*.json
+!credentials.example.json
+*.dpapi
+*.local
+*.key
+*.pem
+.env
+.env.*
+config.local.*
+running-processes.json
+# Camera footage, diagnostics and third-party binaries
+*.jpg
+*.jpeg
+*.png
+*.h264
+*.mp4
+*.bin
+*.log
+*.apk
+*.xapk
+bridge-tools/
+native-tools/
+analysis-tools/
+__pycache__/
+*.pyc
+.venv/

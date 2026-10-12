@@ -1,0 +1,14 @@
+.MMM-DekcoBridge .dekco-camera {
+  max-width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.MMM-DekcoBridge .dekco-camera img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  color: #aaa;
+  font-size: 18px;
+}
+
